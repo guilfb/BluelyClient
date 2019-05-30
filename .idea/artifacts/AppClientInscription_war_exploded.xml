@@ -5,9 +5,15 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="AppClientInscription" />
+          <element id="jpa-descriptors" facet="AppClientInscription/jpa/JPA" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Hibernate 5.4.2-5.4.2" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar" />
+          <element id="file-copy" path="C:/wildfly-16.0.0.Final/bin/client/jboss-cli-client.jar" />
+          <element id="file-copy" path="C:/wildfly-16.0.0.Final/bin/client/jboss-client.jar" />
+          <element id="library" level="project" name="Spring-4.3.18.RELEASE" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="AppClientInscription/web/Web" />

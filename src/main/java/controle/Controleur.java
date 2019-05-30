@@ -32,6 +32,7 @@ public class Controleur extends HttpServlet {
     private static final String ACTION_TYPE = "action";
     private static final String AJOUTER_INSCRIPTION = "ajouteInscription";
     private static final String ENVOI_INSCRIPTION = "envoiInscription";
+    private static final String MAP = "map";
     private static final String RETOUR_ACCUEIL = "Retour";
 
     /**
@@ -86,7 +87,11 @@ public class Controleur extends HttpServlet {
         String actionName = request.getParameter(ACTION_TYPE);
 
         // Si on veut afficher l'ensemble des demandes d'inscription
-        if (AJOUTER_INSCRIPTION.equals(actionName)) {
+        if (MAP.equals(actionName)) {
+
+            request.getRequestDispatcher("Map.jsp").forward(request, response);
+
+        }else if (AJOUTER_INSCRIPTION.equals(actionName)) {
 
             request.getRequestDispatcher("AjouteInscription.jsp").forward(request, response);
 
