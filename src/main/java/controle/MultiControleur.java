@@ -27,25 +27,8 @@ public class MultiControleur {
 	// /
 	// / Affichage de la page d'accueil
 	// /
-	@RequestMapping(value = "AppClientInscription_war_exploded/index.htm", method = RequestMethod.GET)
+	@RequestMapping(value = "map.htm", method = RequestMethod.GET)
 	public ModelAndView Afficheindex1(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		return new ModelAndView("index");
-	}
-
-	// /
-	// / Affichage de la page d'accueil
-	// /
-	@RequestMapping(value = "/a.htm", method = RequestMethod.GET)
-	public ModelAndView Afficheindex2(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		return new ModelAndView("index");
-	}
-
-	// /
-	// / Affichage de la page d'accueil
-	// /
-	@RequestMapping(value = "/AppClientInscription_war_exploded/map.htm", method = RequestMethod.GET)
-	public ModelAndView Afficheindex3(HttpServletRequest request, HttpServletResponse response) throws Exception {
-
 		return new ModelAndView("WEB-INF/Map");
 	}
 

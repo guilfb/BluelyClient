@@ -38,7 +38,7 @@
           <factory-entry name="PInscription" />
         </datasource-mapping>
         <naming-strategy-map />
-        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/persistence.xml" />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/target/classes/persistence.xml" />
       </configuration>
     </facet>
   </component>
