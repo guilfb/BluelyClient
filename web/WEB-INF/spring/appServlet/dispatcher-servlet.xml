@@ -7,4 +7,26 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
     <!-- Using default handler mapping i.e. BeanNameUrlHandlerMapping i.e. any request with URL  /multiaction/*.htm will be handled by MultiControleur-->
     <!-- InternalPathMethodNameResolver  invokes a method with name same as the last part of request URL excluding the extension -->
 
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+
+    <bean name="/multiaction/*.htm" class="controle.MultiControleur">
+    </bean>
+
+    <bean name="index.htm" class="controle.MultiControleur">
+    </bean>
+
+    <bean name="*.htm" class="controle.MultiControleur">
+    </bean>
+
+    <bean name="/*.htm" class="controle.MultiControleur">
+    </bean>
+
+    <bean name="*" class="controle.MultiControleur">
+    </bean>
+
+    <bean name="/*" class="controle.MultiControleur">
+    </bean>
+
+    <bean name="/AppClientInscription_war_exploded/index.htm" class="controle.MultiControleur" />
+
 </beans>

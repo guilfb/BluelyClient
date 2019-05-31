@@ -10,9 +10,9 @@
          pageEncoding="UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<%@ include file="Header.jsp" %>
+<%@ include file="WEB-INF/Header.jsp" %>
 <script language="Javascript" type="text/javascript"></script>
-<script type="text/javascript" src="js/foncControle.js"></script>
+<script type="text/javascript" src="./resources/js/foncControle.js"></script>
 
 <div>
     <div class="container">
