@@ -36,7 +36,6 @@ public class EnvoiInscription {
              * System.getProperty("password", DEFAULT_PASSWORD));
              */
 
-
             // Création Connection et Session JMS
             connection = cf.createTopicConnection();
             session = connection.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
